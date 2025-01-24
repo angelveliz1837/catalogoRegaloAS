@@ -55,6 +55,26 @@
         width: 100%;
         display: grid;
     }
+    
+        .oferta{
+            display: block;
+            background-color: #FFA405;
+            margin-left: 327px;
+            margin-right: 40px;
+            padding: 1.5em 0.7em;
+            border-radius: 50%;
+            margin-top: 1.50em;
+            position: absolute;
+            z-index: 20;
+        }
+
+        .oferta p{
+            margin: 0em;
+            text-align: center;
+            color: #061151;
+            text-align: 700;
+            font-family: "Lilita One", serif;
+        }
 
         .regalo{
             text-align: center;
@@ -69,7 +89,7 @@
         }
 
         .detalle{
-            background-color: yellow;
+            background-color: #FFA405;
             margin: 0em 13em 0em 13em;
             border-radius: 10px;
             position: absolute;
@@ -79,6 +99,7 @@
         .detalle p{
             padding: 0.5em 1.5em;
             margin: 0em;
+            font-family: "Lilita One", serif;
         }
 
     /* DETALLE */
@@ -102,6 +123,7 @@
             width: 100%;
             height: 500px;
             border-radius: 20px;
+            border: 0.7em solid #51EDFC;
         }
 
         .compra{
@@ -114,12 +136,12 @@
             text-align: end;
             position: absolute;
             top: 150px;
-            left: 1200px;
+            left: 1000px;
         }
 
         .regreso_lista h2{
             display: inline-block;
-            background-color: yellow;
+            background-color: #FFA405;
             color: #061151;
             padding: 0.5em 1em;
             border-radius: 10px;
@@ -151,7 +173,10 @@
 
         .precio_descuento{
             font-size: 1.9em;
-            color: hsl(0, 0%, 0%);
+            color: white;
+            background-color: #061151;
+            padding: 0.2em 0.5em;
+            border-radius: 10px;
             font-weight: 700;
         }
 
@@ -215,7 +240,7 @@
             border-radius: 50%;
             padding: 1.1em;
             top: -420px;
-            left: 900px;
+            left: 910px;
             cursor: pointer;
         }
 
@@ -257,6 +282,7 @@
             height: 30em;
             border-radius: 20px;
             opacity: 1;
+            border: 0.3em solid #51EDFC;
         }
         
 
@@ -312,8 +338,22 @@
         margin-top: -3em;
     }
 
+        .oferta{
+            margin-left: 271px;
+            margin-right: 40px;
+            padding: 1.5em 0.7em;
+        }
+
+        .oferta p{
+            margin: 0em;
+            text-align: center;
+            color: #061151;
+            text-align: 700;
+            font-family: "Lilita One", serif;
+        }
+
         .detalle{
-            margin: 0em 1.5em;
+            margin: 0em 2.5em;
         }
 
         .detalle p{
@@ -332,7 +372,7 @@
         }
 
         .imagen_principal img{
-            width: 100%;
+            width: calc(100% - 1em);
             height: 450px;
             border-radius: 20px;
         }
@@ -344,7 +384,7 @@
         .regreso_lista{
             text-align: end;
             position: absolute;
-            top: 540px;
+            top: 560px;
             left: 220px;
         }
 
@@ -424,6 +464,8 @@
     .contenedor5{
         position: absolute;
         background-color: hsl(0, 0%, 100%);
+        top: 0em;
+        left: 0em;
         width: 65%;
         height: 135vh;
         z-index: 50;
@@ -465,8 +507,10 @@
         .sombra{
             background-color: hsl(0, 0%, 0%);
             opacity: 0.8;
+            top: -57em;
+            left: 0em;
             width: 375px;
-            height: 135vh;
+            height: 1180vh;
             position: absolute;
             z-index: 39;
         }

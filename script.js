@@ -45,6 +45,14 @@ document.addEventListener('DOMContentLoaded', function(){
             let divRegalo = document.createElement("div");
             divRegalo.classList.add("regalo");
 
+            //Crear Oferta
+            let divOferta = document.createElement('div');
+            divOferta.classList.add('oferta');
+
+            //Crear parrafo dentro de oferta
+            let pOferta = document.createElement('p');
+            pOferta.textContent = `s/. ${item.precio}`;
+
             // Crear imagen
             let img = document.createElement('img');
             img.src = `images/${item.imagen}.jpg`;  // Usamos el nombre de imagen del JSON
@@ -69,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function(){
             });
 
             // Añadir elementos en su jerarquía
+            divOferta.appendChild(pOferta);
+            divRegalo.appendChild(divOferta);
             divDetalle.appendChild(pDetalle);
             divRegalo.appendChild(img);
             divRegalo.appendChild(divDetalle);
@@ -78,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function(){
              img.addEventListener('click', () => {
                 contenedor4.style.display = 'block';
                 divImagenPrincipal.src = img.src;
+                contenedor1.scrollIntoView({ behavior: 'smooth' });
             });
         });
     }
@@ -107,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function(){
           <p class="detalle4">${producto.detalle4}</p>
         </div>
         <div class="cuenta">
-          <div class="precio_descuento">s/. <span class="precio">${producto.precio}</span>.00</div>
+          <div class="precio_descuento">s/.&nbsp;&nbsp;<span class="precio">${producto.precio}</span>.00</div>
         </div>
         `;
         document.getElementById('detallesProducto').innerHTML = detalles;
@@ -199,18 +210,20 @@ document.addEventListener('DOMContentLoaded', function(){
 
     //Funcion para ver menu
     const verMenu = function(){
-        contenedor6.style.display = "block";
-        contenedor5.style.display = "block";
-        iconoMenu.style.display = "none";
-        aspaNuevo.style.display = "block";
+            contenedor3.style.display = "flex";
+            contenedor6.style.display = "block";
+            contenedor5.style.display = "block";
+            iconoMenu.style.display = "none";
+            aspaNuevo.style.display = "block";
     }
     iconoMenu.addEventListener("click", verMenu);
 
     const cerrarMenu = function(){
-        contenedor6.style.display = "none";
-        contenedor5.style.display = "none";
-        iconoMenu.style.display = "block";
-        aspaNuevo.style.display = "none";
+            contenedor3.style.display = "flex";
+            contenedor6.style.display = "none";
+            contenedor5.style.display = "none";
+            iconoMenu.style.display = "block";
+            aspaNuevo.style.display = "none";
     }
     aspaNuevo.addEventListener("click", cerrarMenu)
 

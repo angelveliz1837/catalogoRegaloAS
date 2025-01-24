@@ -2,24 +2,6 @@
     {
     "id": 1,
     "imagen":"imagen1",
-    "precio": 50,
-    "detalle1": "20 muñequitos Kmoromi",
-    "detalle2": "Un llavero grande Knoromi",
-    "detalle3": "Peluche suavecito Kmoromi",
-    "detalle4": "Cajita de felíz día"
-    },
-    {
-    "id": 2,
-    "imagen":"imagen2",
-    "precio": 35,
-    "detalle1": "Peluche tamaño regular stich",
-    "detalle2": "Ramito hecho a mano (lana algodón) de girasol",
-    "detalle3": "Cajita de madera de TE AMO",
-    "detalle4": ""
-    },
-    {
-    "id": 3,
-    "imagen":"imagen3",
     "precio": 25,
     "detalle1": "Peluchito pequeño  de kmoromi",
     "detalle2": "Cajita de 20 juguetitos pequeños de Kmoromi",
@@ -27,89 +9,8 @@
     "detalle4": ""
     },
     {
-    "id": 4,
-    "imagen":"imagen4",
-    "precio": 30,
-    "detalle1": "Peluche de osito con polo de la Alianza",
-    "detalle2": "Almohadita de Alianza",
-    "detalle3": "Chocolate marinela",
-    "detalle4": "Cajita de madera TE AMO"
-    },
-    {
-    "id": 5,
-    "imagen":"imagen5",
-    "precio": 30,
-    "detalle1": "Peluche de elefante amoroso",
-    "detalle2": "Cajita de felíz día con lazito",
-    "detalle3": "Adicional flor de lana algodón hecho a mano( 10 soles más)",
-    "detalle4": ""
-    },
-    {
-    "id": 6,
-    "imagen":"imagen6",
-    "precio": 30,
-    "detalle1": "Peluche de elefantito amoroso",
-    "detalle2": "Cajita feliz día con lazito( color a elección)",
-    "detalle3": "",
-    "detalle4": ""
-    },
-    {
-    "id": 7,
-    "imagen":"imagen7",
-    "precio": 40,
-    "detalle1": "Pareja de stich tamaño regular",
-    "detalle2": "Un pinguino de chocolate",
-    "detalle3": "Una cajita regular de madera TE AMO",
-    "detalle4": ""
-    },
-    {
-    "id": 8,
-    "imagen":"imagen8",
-    "precio": 40,
-    "detalle1": "Canasta roja regular",
-    "detalle2": "Peluche antialérgico de conejo. Tamaño regular",
-    "detalle3": "Flores decorativas",
-    "detalle4": ""
-    },
-    {
-    "id": 9,
-    "imagen":"imagen9",
-    "precio": 50,
-    "detalle1": "Cajita de Te amo con lazo",
-    "detalle2": "Flor de lana algodón grande hecha a mano",
-    "detalle3": "Conejita regular antialérgica",
-    "detalle4": ""
-    },
-    {
-    "id": 10,
-    "imagen":"imagen10",
-    "precio": 40,
-    "detalle1": "Conejito de tamaño regular",
-    "detalle2": "Sublime y chocolate marinela",
-    "detalle3": "Cajitá feliz día",
-    "detalle4": "Flor regular de lana algodón(adicional 10 soles)"
-    },
-    {
-    "id": 11,
-    "imagen":"imagen11",
-    "precio": 40,
-    "detalle1": "Canasta regular",
-    "detalle2": "Flores decorativas",
-    "detalle3": "Corazón regular rojo",
-    "detalle4": ""
-    },
-    {
-    "id": 12,
-    "imagen":"imagen12",
-    "precio": 30,
-    "detalle1": "Cajita de feliz día más lazito",
-    "detalle2": "Corazón tamaño regular",
-    "detalle3": "Adicional flor de algodón lana(10 soles más)",
-    "detalle4": ""
-    },
-    {
-    "id": 13,
-    "imagen":"imagen13",
+    "id": 2,
+    "imagen":"imagen2",
     "precio": 25,
     "detalle1": "Incluye Stitch más almohadilla",
     "detalle2": "Cajita de madera de TE AMO",
@@ -117,8 +18,26 @@
     "detalle4": ""
     },
     {
-    "id": 14,
-    "imagen":"imagen14",
+    "id": 3,
+    "imagen":"imagen3",
+    "precio": 30,
+    "detalle1": "Peluche de osito con polo de la Alianza",
+    "detalle2": "Almohadita de Alianza",
+    "detalle3": "Chocolate marinela",
+    "detalle4": "Cajita de madera TE AMO"
+    },
+    {
+    "id": 4,
+    "imagen":"imagen4",
+    "precio": 30,
+    "detalle1": "Peluche de elefante amoroso",
+    "detalle2": "Cajita de felíz día con lazito",
+    "detalle3": "Adicional flor de lana algodón hecho a mano( 10 soles más)",
+    "detalle4": ""
+    },
+    {
+    "id": 5,
+    "imagen":"imagen5",
     "precio": 30,
     "detalle1": "Peluche de elefantito amoroso",
     "detalle2": "Cajita feliz día con lazito( color a elección)",
@@ -126,8 +45,26 @@
     "detalle4": ""
     },
     {
-    "id": 15,
-    "imagen":"imagen15",
+    "id": 6,
+    "imagen":"imagen6",
+    "precio": 30,
+    "detalle1": "Cajita de feliz día más lazito",
+    "detalle2": "Corazón tamaño regular",
+    "detalle3": "Adicional flor de algodón lana(10 soles más)",
+    "detalle4": ""
+    },
+    {
+    "id": 7,
+    "imagen":"imagen7",
+    "precio": 30,
+    "detalle1": "Peluche de elefantito amoroso",
+    "detalle2": "Cajita feliz día con lazito( color a elección)",
+    "detalle3": "",
+    "detalle4": ""
+    },
+    {
+    "id": 8,
+    "imagen":"imagen8",
     "precio": 30,
     "detalle1": "Peluche de stitch",
     "detalle2": "Cajita rosada de TE AMO",
@@ -135,8 +72,8 @@
     "detalle4": "2 chocolates kekitos marinela"
     },
     {
-    "id": 16,
-    "imagen":"imagen16",
+    "id": 9,
+    "imagen":"imagen9",
     "precio": 30,
     "detalle1": "Peluche de osito con polo de la U",
     "detalle2": "Almohadita de la U",
@@ -144,8 +81,8 @@
     "detalle4": "Cajita de madera TE AMO más lazito"
     },
     {
-    "id": 17,
-    "imagen":"imagen17",
+    "id": 10,
+    "imagen":"imagen10",
     "precio": 30,
     "detalle1": "Peluche de pingüino con su mochila luck",
     "detalle2": "Cajita de feliz día",
@@ -153,12 +90,75 @@
     "detalle4": ""
     },
     {
-    "id": 18,
-    "imagen":"imagen18",
+    "id": 11,
+    "imagen":"imagen11",
+    "precio": 35,
+    "detalle1": "Peluche tamaño regular stich",
+    "detalle2": "Ramito hecho a mano (lana algodón) de girasol",
+    "detalle3": "Cajita de madera de TE AMO",
+    "detalle4": ""
+    },
+    {
+    "id": 12,
+    "imagen":"imagen12",
+    "precio": 40,
+    "detalle1": "Pareja de stich tamaño regular",
+    "detalle2": "Un pinguino de chocolate",
+    "detalle3": "Una cajita regular de madera TE AMO",
+    "detalle4": ""
+    },
+    {
+    "id": 13,
+    "imagen":"imagen13",
+    "precio": 40,
+    "detalle1": "Canasta roja regular",
+    "detalle2": "Peluche antialérgico de conejo. Tamaño regular",
+    "detalle3": "Flores decorativas",
+    "detalle4": ""
+    },
+    {
+    "id": 14,
+    "imagen":"imagen14",
+    "precio": 40,
+    "detalle1": "Conejito de tamaño regular",
+    "detalle2": "Sublime y chocolate marinela",
+    "detalle3": "Cajitá feliz día",
+    "detalle4": "Flor regular de lana algodón(adicional 10 soles)"
+    },
+    {
+    "id": 15,
+    "imagen":"imagen15",
+    "precio": 40,
+    "detalle1": "Canasta regular",
+    "detalle2": "Flores decorativas",
+    "detalle3": "Corazón regular rojo",
+    "detalle4": ""
+    },
+    {
+    "id": 16,
+    "imagen":"imagen16",
     "precio": 40,
     "detalle1": "Peluche de perrito",
     "detalle2": "Cajita de feliz día",
     "detalle3": "Lazito morado",
+    "detalle4": ""
+    },
+    {
+    "id": 17,
+    "imagen":"imagen17",
+    "precio": 50,
+    "detalle1": "20 muñequitos Kmoromi",
+    "detalle2": "Un llavero grande Knoromi",
+    "detalle3": "Peluche suavecito Kmoromi",
+    "detalle4": "Cajita de felíz día"
+    },
+    {
+    "id": 18,
+    "imagen":"imagen18",
+    "precio": 50,
+    "detalle1": "Cajita de Te amo con lazo",
+    "detalle2": "Flor de lana algodón grande hecha a mano",
+    "detalle3": "Conejita regular antialérgica",
     "detalle4": ""
     }
 ]
