@@ -269,7 +269,7 @@
     }
 
 /* PARTE MOBIL */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 400px){
 
     .contenedor1{
         grid-template-columns: 15% 85%;

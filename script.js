@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let indiceActual = 0;
 
     //Crear un media query si es menor a 375px
-    const mediaQuery = window.matchMedia("(max-width: 375px)");
+    const mediaQuery = window.matchMedia("(max-width: 400px)");
 
     //Botones para el mobil
     const iconoMenu = document.querySelector('.icono_menu');
