@@ -1,0 +1,473 @@
+.contenedor{
+    position: relative;
+    font-family: "Kumbh Sans", serif;
+}
+    /*NAVEGADOR*/
+    .contenedor1{
+        align-content: center;
+        border-bottom: 2px solid #61EDFC;
+        position: absolute;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        width: 90%;
+        margin: 0em 4em;
+    }
+
+        .contenedor1 .logo{
+            padding: 0em 1em 0em 1.5em;
+            width: 84px;
+            text-align: center;
+        }
+
+        .navegador{
+            display: flex;
+            flex-direction: row;
+            text-align: start;
+            margin-bottom: 0em;
+        }
+
+        .raya li{
+            list-style: none;
+            text-align: center;
+            padding: 0em 1.5em;
+            cursor: pointer;
+            color: #061151;
+            font-weight: 700;
+        }
+
+        .raya{
+            padding: 1em 0em 4em 0em;
+        }
+
+        .raya:hover{
+            border-bottom: 4px solid #061151;
+        }
+
+    /* LISTA */
+    .contenedor2{
+        position: absolute;
+        z-index: 10;
+        background-color: white;
+        font-family: "Kumbh Sans", serif;
+        top: 8em;
+        left: 0px;
+        width: 100%;
+        display: grid;
+    }
+
+        .regalo{
+            text-align: center;
+            padding-bottom: 3em;
+        }
+
+        .regalo img{
+            border: 0.5em solid #061151;
+            width: 18em;
+            height: 20em;
+            margin: 1em 1em 0em 1em;
+        }
+
+        .detalle{
+            background-color: yellow;
+            margin: 0em 13em 0em 13em;
+            border-radius: 10px;
+            position: absolute;
+            z-index: 20;
+        }
+
+        .detalle p{
+            padding: 0.5em 1.5em;
+            margin: 0em;
+        }
+
+    /* DETALLE */
+    .contenedor3{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 10em;
+    }
+
+        .imagenes{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imagen_principal{
+            padding: 1em 1em 2em 15em;
+            margin: 0em;
+        }
+
+        .imagen_principal img{
+            width: 100%;
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        .compra{
+            display: flex;
+            flex-direction: column;
+            padding: 7em 9em 7em 6em;
+        }
+
+        .regreso_lista{
+            text-align: end;
+            position: absolute;
+            top: 150px;
+            left: 1200px;
+        }
+
+        .regreso_lista h2{
+            display: inline-block;
+            background-color: yellow;
+            color: #061151;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+        }
+
+        .texto h3{
+            color: hsl(219, 9%, 45%);
+            text-transform: uppercase;
+            margin: 0em;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+        }
+
+        .texto h1{
+            font-size: 2.7em;
+            margin: 0.3em 0em 0.7em 0em;
+        }
+
+        .texto p{
+            color: hsl(219, 9%, 45%);
+            line-height: 2em;
+        }
+
+        .cuenta{
+            display: flex;
+            flex-direction: row;
+            padding: 0.7em 0em;
+        }
+
+        .precio_descuento{
+            font-size: 1.9em;
+            color: hsl(0, 0%, 0%);
+            font-weight: 700;
+        }
+
+        .registro{
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+
+        .anterior{
+            padding-right: 1em;
+        }
+
+        .anterior img, .posterior img{
+            cursor: pointer;
+        }
+
+        .icono_menu{
+            display: none;
+        }
+
+    .contenedor4{
+        position: absolute;
+        z-index: 10;
+        display: none;
+    }
+    
+        .contenedor4::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 119%;
+            height: 380vh;
+            background-color: hsl(220, 13%, 13%);
+            opacity: 0.8;
+            z-index: -1;
+            margin-top: -48em;
+        }
+
+        .atras{
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            padding: 1.1em;
+            top: -420px;
+            left: 530px;
+            cursor: pointer;
+        }
+    
+        .atras:hover{
+            background-color: #061151;
+        }
+    
+        .atras:hover path {
+            stroke: #51EDFC;;
+        }
+    
+        .adelante{
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            padding: 1.1em;
+            top: -420px;
+            left: 900px;
+            cursor: pointer;
+        }
+
+        .adelante:hover{
+            background-color: #061151;
+        }
+    
+        .adelante:hover path{
+            stroke: #51EDFC;;
+        }
+    
+        .cuadro_fotos{
+            padding: 5.5em 21em 0em 34.9em;
+            margin-top: -48em;
+        }
+    
+        .cerrar{
+            text-align: end;
+            padding: 1em 0em;
+            cursor: pointer;
+        }
+    
+        .cerrar path{
+            fill: #51EDFC;
+        }
+    
+        .fotos{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .foto_principal{
+            padding: 0.3em 0em;
+            width: 100%;
+        }
+    
+        .foto_principal img{
+            width: 22.86em;
+            height: 30em;
+            border-radius: 20px;
+            opacity: 1;
+        }
+        
+
+    .contenedor5{
+        display: none;
+    }
+
+    .contenedor6{
+        display: none;
+    }
+
+/* PARTE MOBIL */
+@media screen and (max-width: 375px){
+
+    .contenedor1{
+        grid-template-columns: 15% 85%;
+        width: 100%;
+        border: none;
+        padding: 1em 0em;
+        width: 100%;
+        position: absolute;
+        z-index: 11;
+        margin: 0em;
+    }
+
+        .icono_menu{
+            display: block;
+            padding: 10px 0px 0px 20px;
+        }
+
+        .icono_menu img{
+            width: 1.5em;
+        }
+
+        .menu{
+            display: none;
+        }
+
+        .bloque1 .logo{
+            padding-bottom: 0em;
+        }
+
+        .logo{
+            order: 2;
+        }
+
+        .contenedor1 .logo{
+            width: 40px;
+            padding: 0em 1em;
+        }
+
+    .contenedor2{
+        margin-top: -3em;
+    }
+
+        .detalle{
+            margin: 0em 1.5em;
+        }
+
+        .detalle p{
+            padding: 0.5em 8em;
+            margin: 0em;
+        }
+
+    .contenedor3{
+        display: flex;
+        flex-direction: column;
+    }
+
+        .imagen_principal{
+            padding: 0em 0.5em;
+            margin-top: -4.5em;
+        }
+
+        .imagen_principal img{
+            width: 100%;
+            height: 450px;
+            border-radius: 20px;
+        }
+        .compra{
+            margin: 1em 0em 0em 0em;
+            padding: 1em 1em 0em 1em;
+        }
+
+        .regreso_lista{
+            text-align: end;
+            position: absolute;
+            top: 540px;
+            left: 220px;
+        }
+
+        .regreso_lista h2{
+            font-size: 1.2em;
+        }
+
+        .texto h3{
+            font-size: 0.7em;
+        }
+
+        .texto h1{
+            font-size: 1.7em;
+        }
+    
+        .texto p{
+            font-size: 0.9em;
+        }
+        
+        .cuenta{
+            padding: 0em 0em 1em 0em;
+        }
+
+        .registro{
+            display: flex;
+            flex-direction: column;
+        }
+
+    .contenedor4{
+        display: none;
+        position: absolute;
+        z-index: 11;
+    }
+
+        .contenedor4::before {
+            width: 23em;
+            height: 1200vh;
+        }
+
+        .cuadro_fotos{
+            margin-top: 0em;
+        }
+
+        .foto_principal{
+            padding-left: 1em;
+            width: 100%;
+            margin-right: -1em;
+        }
+    
+        .foto_principal img{
+            width: 21em;
+            height: 30em;
+            border-radius: 20px;
+            opacity: 1;
+        }
+
+        .atras{
+            padding: 0.65em;
+            top: 360px;
+            left: 15px;
+        }
+
+        .adelante{
+            padding: 0.65em;
+            top: 360px;
+            left: 310px;
+        }
+
+        .cuadro_fotos{
+            padding: 0em;
+        }
+
+        .cerrar{
+            padding-top: 7em;
+        }
+
+    .contenedor5{
+        position: absolute;
+        background-color: hsl(0, 0%, 100%);
+        width: 65%;
+        height: 135vh;
+        z-index: 50;
+        font-family: "Kumbh Sans", serif;
+    }
+
+        .cerrar_nuevo{
+            padding: 20px;
+        }
+
+        .menu_nuevo{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .menu_nuevo ul{
+            margin-left: -1em;
+        }
+
+        .raya_nuevo li{
+            list-style: none;
+            text-align: start;
+            cursor: pointer;
+        }
+
+        .raya_nuevo{
+            padding: 1em 0em;
+        }
+
+        .raya_nuevo:hover{
+            border-bottom: 3px solid #061151;
+        }
+
+    .contenedor6{
+        position: absolute;
+    }
+        
+        .sombra{
+            background-color: hsl(0, 0%, 0%);
+            opacity: 0.8;
+            width: 375px;
+            height: 135vh;
+            position: absolute;
+            z-index: 39;
+        }
+}
