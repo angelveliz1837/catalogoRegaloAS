@@ -201,6 +201,8 @@
         position: absolute;
         z-index: 10;
         display: none;
+        top: 0;
+        left: 0;
     }
     
         .contenedor4::before {
@@ -213,7 +215,6 @@
             background-color: hsl(220, 13%, 13%);
             opacity: 0.8;
             z-index: -1;
-            margin-top: -48em;
         }
 
         .atras{
@@ -221,7 +222,7 @@
             background-color: white;
             border-radius: 50%;
             padding: 1.1em;
-            top: -420px;
+            top: 350px;
             left: 530px;
             cursor: pointer;
         }
@@ -239,7 +240,7 @@
             background-color: white;
             border-radius: 50%;
             padding: 1.1em;
-            top: -420px;
+            top: 350px;
             left: 910px;
             cursor: pointer;
         }
@@ -254,7 +255,6 @@
     
         .cuadro_fotos{
             padding: 5.5em 21em 0em 34.9em;
-            margin-top: -48em;
         }
     
         .cerrar{
@@ -285,7 +285,6 @@
             border: 0.3em solid #51EDFC;
         }
         
-
     .contenedor5{
         display: none;
     }
