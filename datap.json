@@ -2,21 +2,25 @@
     {
     "id": 1,
     "imagen":"personalizado1",
-    "precio": 25
+    "precio": 45,
+    "detalle": "Cuadro y almohadilla"
     },
     {
     "id": 2,
     "imagen":"personalizado2",
-    "precio": 25
+    "precio": 30,
+    "detalle": "Cuadro Aniversario"
     },
     {
     "id": 3,
     "imagen":"personalizado3",
-    "precio": 30
+    "precio": 30,
+    "detalle": "Cuadro Cumpleaños"
     },
     {
     "id": 4,
     "imagen":"personalizado4",
-    "precio": 30
+    "precio": 30,
+    "detalle": "Cuadro Calendario"
     }
 ]

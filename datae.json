@@ -2,21 +2,25 @@
     {
     "id": 1,
     "imagen":"extra1",
-    "precio": 25
+    "precio": 25,
+    "detalle": "Peluche Musical"
     },
     {
     "id": 2,
     "imagen":"extra2",
-    "precio": 25
+    "precio": 13,
+    "detalle": "Carrito HotWheels"
     },
     {
     "id": 3,
     "imagen":"extra3",
-    "precio": 30
+    "precio": 15,
+    "detalle": "Ramo de Plastico"
     },
     {
     "id": 4,
     "imagen":"extra4",
-    "precio": 30
+    "precio": 4,
+    "detalle": "Globos de Amor"
     }
 ]

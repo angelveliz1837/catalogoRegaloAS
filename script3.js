@@ -58,6 +58,14 @@ document.addEventListener('DOMContentLoaded', function(){
             img.alt = `product ${item.id}`;
             img.setAttribute('data-id', item.id);
 
+            // Crear div con clase "detalle"
+            let divDetalle = document.createElement('div');
+            divDetalle.classList.add('detalle');
+
+            // Crear párrafo dentro de detalle
+            let pDetalle = document.createElement('p');
+            pDetalle.textContent = `${item.detalle}`;
+
             divImagenPrincipal.addEventListener("click", function() {
                 mostrarImagen(item.id, datae);
             });
@@ -65,7 +73,9 @@ document.addEventListener('DOMContentLoaded', function(){
             // Añadir elementos en su jerarquía
             divOferta.appendChild(pOferta);
             divRegalo.appendChild(divOferta);
+            divDetalle.appendChild(pDetalle);
             divRegalo.appendChild(img);
+            divRegalo.appendChild(divDetalle);
             idContenedor2.appendChild(divRegalo);
 
              // Mostrar el contenedor4 al hacer clic en la imagen
