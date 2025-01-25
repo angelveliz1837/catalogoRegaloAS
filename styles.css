@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .contenedor{
     position: relative;
     font-family: "Kumbh Sans", serif;
@@ -9,7 +13,7 @@
         position: absolute;
         z-index: 1;
         display: grid;
-        grid-template-columns: 15% 85%;
+        grid-template-columns: 15% 75% 10%;
         width: 90%;
         margin: 0em 4em;
     }
@@ -42,6 +46,20 @@
 
         .raya:hover{
             border-bottom: 4px solid #061151;
+        }
+
+        .telefono{
+            align-content: center;
+            text-align: center;
+            background-color: #61EDFC;
+            color: #061151;
+            font-weight: 700;
+            margin: 2em 0em;
+            border-radius: 20px;
+        }
+
+        .telefono a{
+            text-decoration: none;
         }
 
     /* LISTA */
@@ -293,11 +311,39 @@
         display: none;
     }
 
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #25d366;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+    
+    .whatsapp a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .whatsapp img {
+        width: 30px;
+        height: 30px;
+    }
+    
+
 /* PARTE MOBIL */
 @media screen and (max-width: 400px){
 
+    
+
     .contenedor1{
-        grid-template-columns: 15% 85%;
+        grid-template-columns: 15% 75% 10%;
         width: 100%;
         border: none;
         padding: 1em 0em;
@@ -331,6 +377,19 @@
         .contenedor1 .logo{
             width: 40px;
             padding: 0em 1em;
+        }
+
+        .telefono{
+            order: 3;
+            align-content: start;
+            margin-right: 2em;
+            margin-left: -9em;
+            margin-top: 1em;
+            padding: 0.3em 0em;
+        }
+
+        .telefono a{
+            text-decoration: none;
         }
 
     .contenedor2{
