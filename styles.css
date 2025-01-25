@@ -35,9 +35,14 @@ body{
             list-style: none;
             text-align: center;
             padding: 0em 1.5em;
-            cursor: pointer;
             color: #061151;
+        }
+
+        .raya li > a{
+            font-family: "Kumbh Sans", serif;
             font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
         }
 
         .raya{
@@ -312,6 +317,17 @@ body{
         display: none;
     }
 
+    .contenedor7{
+        position: absolute;
+        z-index: 10;
+        background-color: white;
+        font-family: "Kumbh Sans", serif;
+        top: 8em;
+        left: 0px;
+        width: 100%;
+        display: grid;
+    }
+
     .whatsapp {
         position: fixed;
         bottom: 20px;
@@ -548,7 +564,7 @@ body{
         .raya_nuevo li{
             list-style: none;
             text-align: start;
-            cursor: pointer;
+            color: #061151;
         }
 
         .raya_nuevo{
@@ -557,6 +573,13 @@ body{
 
         .raya_nuevo:hover{
             border-bottom: 3px solid #061151;
+        }
+
+        .raya_nuevo li > a{
+            font-family: "Kumbh Sans", serif;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
         }
 
     .contenedor6{

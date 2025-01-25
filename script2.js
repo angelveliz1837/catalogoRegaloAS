@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const idContenedor2 = document.getElementById("contenedor2");
     const contenedor3 = document.querySelector('.contenedor3');
     const idContenedor3 = document.getElementById('contenedor3');
-    const imagenDetalle = document.getElementById('imagenDetalle');
     const regresoLista = document.querySelector('.regreso_lista h2');
     const contenedor4 = document.querySelector('.contenedor4');
     const cerrarFoto = document.querySelector('.cerrar');
@@ -25,22 +24,22 @@ document.addEventListener('DOMContentLoaded', function(){
     const aspaNuevo = document.querySelector('.cerrar_nuevo');
 
     // Cargar datos desde el archivo JSON
-    fetch('data.json')
+    fetch('datap.json')
         .then(response => response.json())
-        .then(data => {
-            imagenes = data.map(item => `images/${item.imagen}.jpg`);
+        .then(datap => {
+            imagenes = datap.map(item => `images/${item.imagen}.jpg`);
             // Llamamos a la función para generar imágenes usando los datos
-            generarImagenes(data);
+            generarImagenes(datap);
         })
         .catch(error => {
             console.error('Error al cargar el archivo JSON:', error);
         });
 
 //Funcion para generar imagenes
-    function generarImagenes(data) {
+    function generarImagenes(datap) {
         idContenedor2.innerHTML = '';
         
-        data.forEach(item => {
+        datap.forEach(item => {
             // Crear div con clase "regalo"
             let divRegalo = document.createElement("div");
             divRegalo.classList.add("regalo");
@@ -59,29 +58,14 @@ document.addEventListener('DOMContentLoaded', function(){
             img.alt = `product ${item.id}`;
             img.setAttribute('data-id', item.id);
 
-            // Crear div con clase "detalle"
-            let divDetalle = document.createElement('div');
-            divDetalle.classList.add('detalle');
-
-            // Crear párrafo dentro de detalle
-            let pDetalle = document.createElement('p');
-            pDetalle.textContent = 'Detalle';
-
-            // Asignar el evento de clic
-            divDetalle.addEventListener("click", function() {
-                mostrarDetalle(item.id, data);
-            });
-
             divImagenPrincipal.addEventListener("click", function() {
-                mostrarImagen(item.id, data);
+                mostrarImagen(item.id, datap);
             });
 
             // Añadir elementos en su jerarquía
             divOferta.appendChild(pOferta);
             divRegalo.appendChild(divOferta);
-            divDetalle.appendChild(pDetalle);
             divRegalo.appendChild(img);
-            divRegalo.appendChild(divDetalle);
             idContenedor2.appendChild(divRegalo);
 
              // Mostrar el contenedor4 al hacer clic en la imagen
@@ -93,42 +77,11 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     }
 
-    function mostrarDetalle(id, data) {
-        // Ocultar contenedor2 y mostrar contenedor3
-        contenedor2.style.display = 'none';
-        idContenedor3.style.display = 'flex';
-        contenedor4.style.display = 'none';
-
-        // Buscar el producto en los datos
-        let producto = data.find(item => item.id === id);
-
-        // Cambiar la imagen en el contenedor3 según el ID seleccionado
-        imagenDetalle.src = `images/${producto.imagen}.jpg`;
-        imagenDetalle.alt = `Detalle de producto ${producto.id}`;
-
-        // Aquí puedes agregar detalles adicionales en contenedor3 si es necesario
-        // Ejemplo de mostrar detalles del producto
-        const detalles = `
-        <div class="texto">
-          <h3>Emprendimiento AS</h3>
-          <h1>Detalles</h1>
-          <p class="detalle1">${producto.detalle1}</p>
-          <p class="detalle2">${producto.detalle2}</p>
-          <p class="detalle3">${producto.detalle3}</p>
-          <p class="detalle4">${producto.detalle4}</p>
-        </div>
-        <div class="cuenta">
-          <div class="precio_descuento">s/.&nbsp;&nbsp;<span class="precio">${producto.precio}</span>.00</div>
-        </div>
-        `;
-        document.getElementById('detallesProducto').innerHTML = detalles;
-    }
-
-    function mostrarImagen(id, data) {
+    function mostrarImagen(id, datap) {
         contenedor4.style.display = 'block';
 
         // Buscar el producto en los datos
-        let producto = data.find(item => item.id === id);
+        let producto = datap.find(item => item.id === id);
 
         // Cambiar la imagen en el contenedor3 según el ID seleccionado
         divImagenPrincipal.src = `images/${producto.imagen}.jpg`;

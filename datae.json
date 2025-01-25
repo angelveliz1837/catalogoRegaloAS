@@ -1,0 +1,22 @@
+[
+    {
+    "id": 1,
+    "imagen":"extra1",
+    "precio": 25
+    },
+    {
+    "id": 2,
+    "imagen":"extra2",
+    "precio": 25
+    },
+    {
+    "id": 3,
+    "imagen":"extra3",
+    "precio": 30
+    },
+    {
+    "id": 4,
+    "imagen":"extra4",
+    "precio": 30
+    }
+]
