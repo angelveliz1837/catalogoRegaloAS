@@ -1,0 +1,416 @@
+body{
+    top: 0;
+    left: 0;
+    font-family: "Kumbh Sans", serif;
+    background-color: rgb(250, 248, 248);
+}
+
+.navegador{
+    display: grid;
+    grid-template-columns: 5% 85% 10%;
+    padding: 0em 2em;
+}
+
+.navegador_logo{
+    text-align: center;
+}
+
+.navegador_logo img{
+    width: 2.5em;
+}
+
+.navegador_nav_menu_items{
+    display: flex;
+    flex-direction: row;
+}
+
+.navegador_nav_menu_items_item{
+    padding: 0em 1em;
+    font-size: 1.2em;
+}
+
+.navegador_nav_menu_items_item li{
+    list-style: none;
+}
+
+.navegador_nav_menu_items_item li > a{
+    text-decoration: none;
+}
+
+.navegador_contacto{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.portada{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    margin: 2em 10em 0em 10em;
+}
+
+.portada_antes{
+    align-content: center;
+    border-radius: 50%;
+    margin: 13em 0em;
+    background-color: rgb(230, 220, 220);
+    text-align: center;
+}
+
+.portada_antes img {
+    text-align: center;
+}
+
+.portada_imagen img{
+    width: 100%;
+    height: 30em;
+}
+
+.portada_despues{
+    align-content: center;
+    border-radius: 50%;
+    margin: 13em 0em;
+    background-color: rgb(230, 220, 220);
+    text-align: center;
+}
+
+.titulo_producto{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    font-family: "Agu Display", serif;
+    padding: 2em 1em 1em 1em;
+}
+
+.titulo_producto h1{
+    margin: 0em;
+}
+
+.titulo_producto img{
+    height: 3em;
+    align-content: center;
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista_regalo {
+    width: 22em;
+    text-align: center;
+    padding: 0em 1em;
+}
+
+.lista_regalo img {
+    width: 100%;
+    height: 25em;
+}
+
+.lista_regalo_precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.regalo{
+    margin: 0em 1em 3em 1em;
+}
+
+.regalo_personal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: pink;
+
+}
+
+.regalo_personal_foto{
+    width: 100%;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0em 0em 0em;
+}
+
+.regalo_personal_foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.regalo_personal_texto{
+    background-color: pink;
+}
+
+.regalo_personal_texto_contenido{
+    background-color: white;
+    border: 1px solid black;
+    margin: 3em 15em 4em 0em;
+    padding: 1em;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.regalo_personal_texto_contenido_titulo{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    background-color: #FFA405;
+    padding: 0em 1em;
+    margin-left: -1em;
+    margin-top: -1em;
+    margin-right: -1em;
+}
+
+.regalo_personal_texto_contenido_titulo div{
+    align-content: center;
+}
+
+.regalo_personal_texto_contenido_titulo div > p{
+    color: black;
+    font-weight: bold;
+}
+
+
+.regalo_personal_texto_contenido h1{
+    font-size: 2em;
+    margin: 0.5em 0em 0.3em 0em;
+}
+
+.regalo_personal_texto_contenido h2{
+    font-size: 1.5em;
+    margin: 0em;
+    color: rgb(190, 12, 12);
+}
+
+
+.regalo_personal_texto_contenido p {
+    font-size: 1em;
+    text-align: justify;
+    color: darkgray;
+}
+
+.regalo_personal_texto_contenido_boton{
+    margin: 0em 10em;
+    padding: 0.5em 0em;
+    background-color: green;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.regalo_personal_texto_contenido_boton a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Botón para mostrar/ocultar redes */
+.social-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.social-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Contenedor de iconos sociales */
+.social-icons {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+    pointer-events: none; /* Evita que se pueda hacer clic cuando está oculto */
+}
+
+/* Mostrar redes sociales cuando están abiertas */
+.social-icons.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Estilos para los iconos */
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Colores específicos para cada red */
+.whatsapp {
+    background-color: #25d366;
+}
+.telefono {
+    background-color: #007bff;
+}
+.tiktok {
+    background-color: #000;
+}
+.facebook {
+    background-color: #1877f2;
+}
+.instagram {
+    background: linear-gradient(45deg, #ff9a00, #ff0dff, #d400ff);
+}
+
+@media (min-width: 778px) and (max-width: 1440px) {
+    .navegador{
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        padding: 1em;
+    }
+
+    .regalo_personal_texto_contenido{
+        margin: 3em 2em 0em 0em;
+        padding: 1em;
+    }
+
+    .regalo_personal_texto_contenido h1{
+        font-size: 1.2em;
+    }
+
+    .regalo_personal_texto_contenido h2{
+        font-size: 1em;
+    }
+
+    .regalo_personal_texto_contenido p{
+        font-size: 0.9em;
+    }
+
+    .regalo_personal_texto_contenido_boton{
+        margin: 0em 7em;
+        padding: 0.5em 0em;
+        font-size: 0.9em;
+    }
+
+}
+
+@media (min-width: 345px) and (max-width: 778px) {
+
+    .navegador{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 1em;
+    }
+
+    .navegador_nav{
+        display: none;
+    }
+ 
+    .portada{
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        margin: 0em 1em 0em 1em;
+    }
+
+    .portada_imagen{
+        background-color: red;
+        height: 200px;
+    }
+
+    .portada_imagen img{
+       height: 200px;
+       margin-bottom: -10em;
+    }
+
+    .portada_antes, .portada_despues{
+        margin: 0em;
+        height: 200px;
+        background-color: rgb(250, 248, 248);
+    }
+    
+    .portada_antes img {
+        text-align: center;
+    }
+
+    .titulo_producto{
+        font-size: 0.8em;
+    }
+
+    .lista{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista_regalo img {
+        width: 70%;
+        height: 15em;
+        text-align: center;
+    }
+
+    .regalo_personal{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .regalo_personal_texto_contenido{
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .regalo_personal_texto_contenido h1{
+        font-size: 1.2em;
+    }
+
+    .regalo_personal_texto_contenido h2{
+        font-size: 1em;
+    }
+
+    .regalo_personal_texto_contenido p{
+        font-size: 0.9em;
+    }
+
+    .regalo_personal_texto_contenido_boton{
+        margin: 0em 7em;
+        padding: 0.5em 0em;
+        font-size: 0.7em;
+    }
+
+}
+
+@media (max-width: 345px) {
+    .regalo_personal_texto_contenido_boton{
+        margin: 0em 4em;
+        padding: 0.5em 0em;
+        font-size: 0.9em;
+    }
+}
